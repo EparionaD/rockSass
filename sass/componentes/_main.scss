@@ -1,0 +1,20 @@
+.seccion-uno__parrafo{
+    @include texto;
+}
+.seccion-dos__parrafo{
+    @include texto;
+}
+.seccion-tres__parrafo{
+    @include texto;
+}
+.seccion-uno__imagen img{
+    @include imagen;
+}
+.seccion-dos__imagen img{
+    @include imagen;
+    @include texto;
+}
+.seccion-tres__imagen img{
+    @include imagen;
+    @include texto;
+}

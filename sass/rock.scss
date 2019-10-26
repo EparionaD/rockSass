@@ -1,6 +1,8 @@
 //Importando variables
 @import "./lib/variables";
+@import "./lib/mixin";
 @import "./lib/medias-queries";
 
 //Importando componentes
 @import "./componentes/header";
+@import "./componentes/main";

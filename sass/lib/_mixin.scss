@@ -1,0 +1,13 @@
+@mixin imagen {
+    width: $ancho-imagen;
+    height: $alto-imagen;
+    border-radius: 50%;
+}
+@mixin texto {
+    h2{
+        font-size: $titulo-size;
+    }
+    p{
+        font-size: $contenido-size;
+    }
+}

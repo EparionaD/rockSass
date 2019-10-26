@@ -1,5 +1,97 @@
+*{
+    margin: 0;
+}
 .header{
+    background-image: url("../../assets/images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $tipo-letra;
+    height: 100vh;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: .5;
+        position: absolute;
+    }
+    @media #{$media-celular}{
+        height: 150vh;
+        &::before{
+            height: 150vh;
+        }
+    }
     &__navegacion{
         background-color: $color-primario;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 9em;
+        position: relative;
+        @media #{$media-celular}{
+            padding: 1em 1em;
+        }
+    }
+    &__logo{
+        a{
+            color: $color-secundario;
+            text-decoration: none;
+            font-size: $tamaño-logo;
+        }
+    }
+    &__imagen{
+        display: none;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        @media #{$media-celular}{
+            display: block;
+        }
+    }
+    &__menu{
+        display: flex;
+        li{
+            list-style: none;
+            margin: 0 .7em;
+            a{
+                color: $color-secundario;
+                text-decoration: none;
+                font-size: $tamaño-menu;
+            }
+        }
+        @media #{$media-celular}{
+            display: none;
+        }
+    }
+    &__texto{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        @media #{$media-celular}{
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+    }
+    &__titulo{
+        color: $color-secundario;
+        h1{
+            font-size: $tamaño-titulo;
+            span{
+                font-size: $tamaño-span;
+            }
+        }
+    }
+    @media #{$media-celular}{
+        h1{
+            font-size: $tamaño-titulo*1.05;
+        }
     }
 }
