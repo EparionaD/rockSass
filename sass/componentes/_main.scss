@@ -1,20 +1,27 @@
-.seccion-uno__parrafo{
-    @include texto;
+.seccion-uno{
+    @include posicion;
+    &__parrafo{
+        @include texto;
+    }
+    &__imagen{
+        @include imagen;
+    }
 }
-.seccion-dos__parrafo{
-    @include texto;
+.seccion-dos{
+    @include posicion;
+    &__parrafo{
+        @include texto;
+    }
+    &__imagen{
+        @include imagen;
+    }
 }
-.seccion-tres__parrafo{
-    @include texto;
-}
-.seccion-uno__imagen img{
-    @include imagen;
-}
-.seccion-dos__imagen img{
-    @include imagen;
-    @include texto;
-}
-.seccion-tres__imagen img{
-    @include imagen;
-    @include texto;
+.seccion-tres{
+    @include posicion;
+    &__parrafo{
+        @include texto;
+    }
+    &__imagen{
+        @include imagen;
+    }
 }

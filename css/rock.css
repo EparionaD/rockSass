@@ -141,12 +141,103 @@
   }
 }
 
+.seccion-uno {
+  height: 400px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .seccion-uno {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+.seccion-uno__parrafo {
+  width: 30%;
+}
+
 .seccion-uno__parrafo h2 {
   font-size: 3.5em;
 }
 
 .seccion-uno__parrafo p {
   font-size: 1.2em;
+}
+
+@media (max-width: 576px) {
+  .seccion-uno__parrafo {
+    width: 80%;
+  }
+  .seccion-uno__parrafo h2 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+  .seccion-uno__parrafo p {
+    font-size: 1.1em;
+  }
+}
+
+.seccion-uno__imagen {
+  width: 30%;
+}
+
+.seccion-uno__imagen img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 2em;
+}
+
+@media (max-width: 576px) {
+  .seccion-uno__imagen img {
+    width: 250px;
+    height: 250px;
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .seccion-uno__imagen {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.seccion-dos {
+  height: 400px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .seccion-dos {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+.seccion-dos__parrafo {
+  width: 30%;
 }
 
 .seccion-dos__parrafo h2 {
@@ -157,6 +248,71 @@
   font-size: 1.2em;
 }
 
+@media (max-width: 576px) {
+  .seccion-dos__parrafo {
+    width: 80%;
+  }
+  .seccion-dos__parrafo h2 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+  .seccion-dos__parrafo p {
+    font-size: 1.1em;
+  }
+}
+
+.seccion-dos__imagen {
+  width: 30%;
+}
+
+.seccion-dos__imagen img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 2em;
+}
+
+@media (max-width: 576px) {
+  .seccion-dos__imagen img {
+    width: 250px;
+    height: 250px;
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .seccion-dos__imagen {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.seccion-tres {
+  height: 400px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .seccion-tres {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+.seccion-tres__parrafo {
+  width: 30%;
+}
+
 .seccion-tres__parrafo h2 {
   font-size: 3.5em;
 }
@@ -165,36 +321,52 @@
   font-size: 1.2em;
 }
 
-.seccion-uno__imagen img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+@media (max-width: 576px) {
+  .seccion-tres__parrafo {
+    width: 80%;
+  }
+  .seccion-tres__parrafo h2 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+  .seccion-tres__parrafo p {
+    font-size: 1.1em;
+  }
 }
 
-.seccion-dos__imagen img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-.seccion-dos__imagen img h2 {
-  font-size: 3.5em;
-}
-
-.seccion-dos__imagen img p {
-  font-size: 1.2em;
+.seccion-tres__imagen {
+  width: 30%;
 }
 
 .seccion-tres__imagen img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  margin-top: 2em;
 }
 
-.seccion-tres__imagen img h2 {
-  font-size: 3.5em;
+@media (max-width: 576px) {
+  .seccion-tres__imagen img {
+    width: 250px;
+    height: 250px;
+    margin-top: 5em;
+  }
 }
 
-.seccion-tres__imagen img p {
+@media (max-width: 576px) {
+  .seccion-tres__imagen {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer {
+  background-color: #393e46;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #fffafa;
   font-size: 1.2em;
 }

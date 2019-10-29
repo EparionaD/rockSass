@@ -1,13 +1,49 @@
 @mixin imagen {
-    width: $ancho-imagen;
-    height: $alto-imagen;
-    border-radius: 50%;
+    width: 30%;
+    img{
+        width: $ancho-imagen;
+        height: $alto-imagen;
+        border-radius: 50%;
+        margin-top: 2em;
+        @media #{$media-celular}{
+            width: $ancho-imagen - 50px;
+            height: $alto-imagen - 50px;
+            margin-top: 5em;
+        };
+    }
+    @media #{$media-celular}{
+        width: 100%;
+        text-align: center;
+    };
+    
 }
 @mixin texto {
+    width: 30%;
     h2{
         font-size: $titulo-size;
     }
     p{
         font-size: $contenido-size;
+
+    }
+    @media #{$media-celular}{
+        width: 80%;
+        h2{
+            font-size: $titulo-size - 0.5em;
+            margin-top: 2em;
+        }
+        p{
+            font-size: $contenido-size - 0.1em;
+        }
+    };
+}
+@mixin posicion {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media #{$media-celular}{
+        flex-direction: column;
+        height: auto;
     }
 }
